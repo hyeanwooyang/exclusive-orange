@@ -14,57 +14,70 @@
     <!-- Stylesheet-->
     <link rel="stylesheet" href="css\reset.css">
     <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="css\modal.css">
 </head>
 
 <body>
+  <!-- Logos-->
   <div id="logo" class="center">
     <a href="#"><img src="Artwork\Logo\logo.png"></a>
     <a href="https://github.com/hyeanwooyang/exclusive-orange"><img src="GitHub-Mark-32px.png"></a>
+  </div>
+
+  <!--Modal Window-->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="#" id="modalImg">
+    </div>
   </div>
   
   <!-- mansory layout like Pinterest-->
   <div id="columns" class="center">
     <figure>
-      <a href="Artwork\Animal-Logo\animal-logo.png" target="_blank"><img src="Artwork\Animal-Logo\animal-logo.png"></a>
+      <img src="Artwork\Animal-Logo\animal-logo.png" onclick="showModalWindow('Artwork\\Animal-Logo\\animal-logo.png')">
       <figcaption>애니멀 로고</figcaption>
     </figure>
 
     <figure>
-      <a href="Artwork\Just-Banana\just-banana.jpg" target="_blank"><img src="Artwork\Just-Banana\just-banana.jpg"></a>
+      <img src="Artwork\Just-Banana\just-banana.jpg" onclick="showModalWindow('Artwork\\Just-Banana\\just-banana.jpg')">
       <figcaption>그냥 바나나</figcaption>
     </figure>
 
     <figure>
-      <a href="Artwork\Men-Outfits\men-outfits.png" target="_blank"><img src="Artwork\Men-Outfits\men-outfits.png"></a>
+      <img src="Artwork\Men-Outfits\men-outfits.png" onclick="showModalWindow('Artwork\\Men-Outfits\\men-outfits.png')">
       <figcaption>누끼따서 바닥에 합성, 그림자 넣기</figcaption>
     </figure>
 
     <figure>
-      <a href="Artwork\My-Character\my-character.png" target="_blank"><img src="Artwork\My-Character\my-character.png"></a>
+      <img src="Artwork\My-Character\my-character.png" onclick="showModalWindow('Artwork\\My-Character\\my-character.png')">
       <figcaption>내 캐릭터</figcaption>
     </figure>
 
     <figure>
-          <a href="Artwork\Neon-Effect\neon-effect.png" target="_blank"><img src="Artwork\Neon-Effect\neon-effect.png"></a>
+        <img src="Artwork\Neon-Effect\neon-effect.png" onclick="showModalWindow('Artwork\\Neon-Effect\\neon-effect.png')">
       <figcaption>네온 사인 이펙트</figcaption>
     </figure>
 
     <figure>
-      <a href="Artwork\Product-Perfume\prodcut-perfume.png" target="_blank"><img src="Artwork\Product-Perfume\prodcut-perfume.png"></a>
+      <img src="Artwork\Product-Perfume\prodcut-perfume.png" onclick="showModalWindow('Artwork\\Product-Perfume\\prodcut-perfume.png')">
       <figcaption>향수 이미지와 물보라를 합성한 상세페이지 배너</figcaption>
     </figure>
 
     <figure>
-      <a href="Artwork\Squirrel-Thunder\squirrel-thunder.jpg" target="_blank"><img src="Artwork\Squirrel-Thunder\squirrel-thunder.jpg"></a>
+      <img src="Artwork\Squirrel-Thunder\squirrel-thunder.jpg" onclick="showModalWindow('Artwork\\Squirrel-Thunder\\squirrel-thunder.jpg')">
       <figcaption>람쥐썬더!</figcaption>
     </figure>    
 
     <figure>
-      <a href="Artwork\That-Hair\that-hair.jpg" target="_blank"><img src="Artwork\That-Hair\that-hair.jpg"></a>
+      <img src="Artwork\That-Hair\that-hair.jpg" onclick="showModalWindow('Artwork\\That-Hair\\that-hair.jpg')">
       <figcaption>복잡한 머리 누끼 따기</figcaption>
     </figure>
   </div>
 
+  <!-- Scripts-->
+  <script src="js\modal.js" onclick="showModalWindow()"></script>
 </body>
 
 </html>
