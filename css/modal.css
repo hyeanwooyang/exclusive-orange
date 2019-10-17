@@ -13,7 +13,6 @@
   background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
   cursor: zoom-out;
 }
-  
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
@@ -24,12 +23,9 @@
   width: 82%;
   cursor: default;
 }
-
-#modalImg{
-  max-width: 767px;
-
+.modal-content img{
+  width : 100%;
 }
-
 /* The Close Button */
 .close {
   color: #afafaf;
@@ -39,7 +35,6 @@
   font-size: 48px;
   font-weight: bold;
 }
-  
 .close:hover,
 .close:focus {
   color: rgb(255, 255, 255);
